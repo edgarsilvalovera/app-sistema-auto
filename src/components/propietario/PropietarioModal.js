@@ -183,12 +183,12 @@ export const PropietarioModal = () => {
                 <div className="form-group">
                     <label>Documento</label>
                     <input 
-                        type="text" 
+                        type="number" 
                         className={`form-control ${ !documentoValid && 'is-invalid' }`}
                         placeholder="Documento"
                         name="documento"
                         autoComplete="off"
-                        value={documento}
+                        value={documento}                        
                         onChange={handelInputChange}
                     />                    
                 </div>
@@ -196,7 +196,7 @@ export const PropietarioModal = () => {
                 <div className="form-group">
                     <label>Dirección</label>
                     <input 
-                        type="text" 
+                        type="number" 
                         className={`form-control ${ !direccionValid && 'is-invalid' }`}
                         placeholder="Direacción"
                         name="direccion"
